@@ -16,6 +16,7 @@ import ArunachalPradesh from './Location/ArunachalPradesh';
 import Uttarakhand from './Location/Uttarakhand';
 import NorthEast from './Location/NorthEast';
 import Bhutan from './Location/Bhutan';
+import Nepal from './Location/Nepal';
 
 const LocationPage = () => {
   const { location } = useParams();
@@ -34,6 +35,7 @@ const LocationPage = () => {
     Uttarakhand,
     NorthEast,
     Bhutan,
+    Nepal,
   };
 
   const LocationComponent = locationComponents[location];

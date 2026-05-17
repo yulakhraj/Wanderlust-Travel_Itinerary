@@ -89,5 +89,12 @@ export const locations = [
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
     tagline: "Land of the Thunder Dragon",
     featured: true
+  },
+  {
+    id: "Nepal",
+    name: "Nepal",
+    image: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
+    tagline: "The Roof of the World",
+    featured: true
   }
 ];

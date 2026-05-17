@@ -46,7 +46,7 @@ function Navbar({ onHomeClick }) {
               Trending
             </Link>
             <Link 
-              to="/" 
+              to="/destinations" 
               className={`flex items-center gap-1.5 text-sm font-semibold hover:-translate-y-0.5 transition-all text-slate-300 hover:text-emerald-400`}
             >
               <Map size={18} />

@@ -1,0 +1,131 @@
+# Prompt to Generate a New Itinerary Location
+
+Copy and paste the prompt below into an AI assistant (like ChatGPT, Claude, or Gemini) whenever you want to generate a new itinerary location. Just replace `[INSERT LOCATION NAME]` with your desired destination!
+
+---
+## COPY FROM HERE 👇
+---
+
+Act as an expert travel planner and a senior React frontend developer. I need you to create a beautiful, 7-day travel itinerary for **[INSERT LOCATION NAME]**.
+
+Please generate a complete React component for this location following the exact structure and dark-mode Tailwind CSS aesthetic below. 
+
+### Guidelines:
+1. Make sure to include a 7-day schedule with emojis for time and activities.
+2. Provide a "Travel Tips & Essentials" section at the bottom.
+3. Include a Google Maps Route link for the journey.
+4. **DO NOT** change the Tailwind CSS classes. It must exactly match the premium dark mode structure provided.
+5. Make the content engaging, practical, and highly realistic.
+
+### React Component Template to use:
+
+```jsx
+import React from 'react';
+
+const LocationName = () => (
+  <div className="w-full">
+    <main className="w-full">
+      {/* Do NOT modify these hidden divs; they are required for the LocationLayout wrapper logic */}
+      <div className="hidden" style={{ backgroundImage: "url('...')", backgroundSize: 'cover' }} />
+      <div className="hidden" />
+      
+      <div className="w-full">
+        <div className="w-full">
+          {/* Main Title */}
+          <h1 className="text-4xl font-bold text-center mb-4 text-emerald-400 drop-shadow-md">
+            🌟 [INSERT LOCATION NAME] Adventure Itinerary (7 Days) 🌟
+          </h1>
+          <p className="text-center text-lg mb-2 font-semibold">Route: [Start] ➡️ [Middle] ➡️ [End]</p>
+          <hr className="my-6 border-white/10" />
+
+          {/* Repeat this block for Day 1 through Day 7 */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🛬 Day X: [Day Title]</h2>
+            <p className="text-slate-400 mb-2">📍 Stay/Base: [Location]</p>
+            <ul className="list-disc ml-6 text-slate-300">
+              <li>🕙 <b>10:00 AM</b> – [Activity]</li>
+              <li>🕑 <b>02:00 PM</b> – [Activity]</li>
+              <li>🕗 <b>08:00 PM</b> – Dinner at [Local Restaurant Idea] 🍽️</li>
+            </ul>
+          </div>
+
+          <hr className="my-6 border-white/10" />
+
+          {/* Travel Tips & Essentials */}
+          <div className="mb-4">
+            <h2 className="text-xl font-bold text-white drop-shadow-md mb-2">✅ Travel Tips & Essentials</h2>
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-emerald-400 drop-shadow-md">🛂 Essentials:</h3>
+              <ul className="list-disc ml-6 text-slate-300">
+                <li>[Essential 1]</li>
+                <li>[Essential 2]</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-emerald-400 drop-shadow-md">💡 Tips:</h3>
+              <ul className="list-disc ml-6 text-slate-300">
+                <li>[Tip 1]</li>
+                <li>[Tip 2]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Google Maps Route */}
+        <div className="mt-8 text-center">
+          <h2 className="text-2xl font-bold text-white drop-shadow-md mb-4">🗺️ Google Maps Route (Visualize Your Journey)</h2>
+          <a 
+            href="https://www.google.com/maps/dir/[start]/[middle]/[end]"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-emerald-500 text-[#0B0F19] shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:bg-emerald-400 font-bold py-2 px-4 rounded-lg transition duration-300"
+          >
+            📍 Click Here for Full Route Map
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+);
+
+export default LocationName;
+```
+
+---
+## 👆 STOP COPYING HERE
+---
+
+# How to Integrate the Generated Code
+
+Once the AI gives you the new React component, follow these **3 simple steps** to integrate it into the Wanderlust app:
+
+### Step 1: Create the Component File
+Create a new file in `src/components/Location/` named exactly after your location (e.g., `Bali.js`). Paste the generated React code into this file.
+
+### Step 2: Update the Data Registry
+Open `src/data/locations.js` and add a new object to the array. Make sure you find a valid Unsplash image URL!
+```javascript
+  {
+    id: "Bali",               // Must match exactly what you use in Step 3
+    name: "Bali",             // Display name for the grid/carousel
+    image: "https://images.unsplash.com/photo-YOUR_VALID_ID?auto=format&fit=crop&w=800&q=80",
+    tagline: "Island of the Gods",
+    featured: false           // Set to true if you want it on the homepage carousel
+  }
+```
+
+### Step 3: Register the Route
+Open `src/components/LocationPage.js` and do two things:
+1. **Import it at the top:** 
+   `import Bali from './Location/Bali';`
+2. **Add it to the `locationComponents` object:**
+   ```javascript
+   const locationComponents = {
+     Sikkim,
+     Ladakh,
+     // ... other locations
+     Bali,  // <-- Add it here!
+   };
+   ```
+
+Save all files, and your new destination will instantly be available on the app!

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { locations } from './data/locations';
 import LocationPage from './components/LocationPage';
+import Destinations from './components/Destinations';
 import './styles/main.css';
 
 const travelQuotes = [
@@ -179,6 +180,10 @@ function App() {
           <Route 
             path="/location/:location" 
             element={<LocationPage />} 
+          />
+          <Route 
+            path="/destinations" 
+            element={<Destinations />} 
           />
         </Routes>
       </main>
