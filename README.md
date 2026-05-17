@@ -6,9 +6,12 @@ A beautifully crafted, highly responsive web application that helps users discov
 
 - **Immersive Dark Theme**: A visually striking slate-blue design that makes high-resolution destination images pop.
 - **Glassmorphism UI**: Dynamic frosted glass (`backdrop-blur`) navigation bars and itinerary containers.
+- **Global Search**: Instantly find destinations using the new animated, auto-complete search bar in the header.
+- **Trending & Destinations Pages**: Dedicated views for hand-picked top travel spots and a full-width grid of all available itineraries.
 - **Interactive Carousel**: Horizontal snapping carousel featuring top curated destinations with hover-zoom effects.
-- **13 Detailed Itineraries**: Comprehensive day-by-day travel guides for top locations (Ladakh, Sikkim, Goa, etc.).
+- **14 Detailed Itineraries**: Comprehensive day-by-day travel guides for top locations (including a newly added Nepal itinerary).
 - **Dynamic Routing**: Extensible layout wrapper (`LocationLayout`) injecting dynamic Unsplash imagery for every inside page.
+- **AI-Powered Expansion**: Easily generate new destinations using the included `prompt.txt` template.
 - **Responsive Design**: Flawless experience from mobile screens to ultrawide desktop monitors.
 
 ## Tech Stack
@@ -40,11 +43,13 @@ wanderlust/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.js
+│   │   ├── Navbar.js             # Includes dynamic Search bar
 │   │   ├── Footer.js
 │   │   ├── LocationLayout.js   # New dynamic layout wrapper
-│   │   ├── LocationPage.js
-│   │   └── Location/           # 13 Individual itinerary components
+│   │   ├── LocationPage.js     # Router for individual itineraries
+│   │   ├── Destinations.js     # Grid view of all locations
+│   │   ├── Trending.js         # Curated trending locations
+│   │   └── Location/           # 14 Individual itinerary components
 │   ├── data/
 │   │   └── locations.js        # Centralized data with verified image URLs
 │   ├── styles/

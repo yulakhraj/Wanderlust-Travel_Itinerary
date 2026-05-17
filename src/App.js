@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { locations } from './data/locations';
 import LocationPage from './components/LocationPage';
 import Destinations from './components/Destinations';
+import Trending from './components/Trending';
 import './styles/main.css';
 
 const travelQuotes = [
@@ -184,6 +185,10 @@ function App() {
           <Route 
             path="/destinations" 
             element={<Destinations />} 
+          />
+          <Route 
+            path="/trending" 
+            element={<Trending />} 
           />
         </Routes>
       </main>
