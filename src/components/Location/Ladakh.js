@@ -1,10 +1,10 @@
 import React from "react";
 
 const Ladakh = () => (
-  <div className="min-h-screen flex flex-col">
-    <main className="flex-grow relative">
+  <div className="w-full">
+    <main className="w-full">
       <div
-        className="absolute inset-0 z-0"
+        className="hidden"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1582972236019-e3d10d405e1a?auto=format&fit=crop&w=1500&q=80')",
           backgroundSize: 'cover',
@@ -12,21 +12,21 @@ const Ladakh = () => (
           backgroundRepeat: 'no-repeat',
         }}
       />
-      <div className="absolute inset-0 z-10 bg-blue-900 bg-opacity-40" />
-      <div className="relative z-20 container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto bg-white bg-opacity-40 rounded-lg p-8 shadow-lg">
-          <h1 className="text-4xl font-bold text-center mb-4 text-blue-600">
+      <div className="hidden" />
+      <div className="w-full">
+        <div className="w-full">
+          <h1 className="text-4xl font-bold text-center mb-4 text-emerald-400 drop-shadow-md">
             🏔️ Ladakh Road Trip Itinerary (7 Days) 🏔️
           </h1>
           <p className="text-center text-lg mb-2 font-semibold">Route: Leh ➡️ Nubra ➡️ Turtuk ➡️ Pangong ➡️ Tso Moriri ➡️ Leh</p>
-          <hr className="my-6 border-blue-300" />
+          <hr className="my-6 border-white/10" />
 
           {/* Day 1 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">🚗 Day 1: Arrival in Leh (11,500 ft) — Acclimatization & Local Sights</h2>
-            <p className="text-gray-700 mb-2">📍 Base: Leh</p>
-            <p className="text-gray-700 mb-2">🕐 Important: Acclimatization day - avoid heavy activity</p>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🚗 Day 1: Arrival in Leh (11,500 ft) — Acclimatization & Local Sights</h2>
+            <p className="text-slate-400 mb-2">📍 Base: Leh</p>
+            <p className="text-slate-400 mb-2">🕐 Important: Acclimatization day - avoid heavy activity</p>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>🕘 <b>09:00 AM</b> – Land in Leh / Arrive by road ✈️</li>
               <li>🛌 <b>10:00 AM</b> – Hotel check-in and rest (important for acclimatization)</li>
               <li>🍽️ <b>01:00 PM</b> – Lunch at Gesmo Restaurant 🍜</li>
@@ -40,8 +40,8 @@ const Ladakh = () => (
               <li>🍽️ <b>07:30 PM</b> – Dinner at The Tibetan Kitchen 🍲</li>
             </ul>
             <div className="mt-4">
-              <h3 className="text-lg font-semibold text-blue-600">💡 Important Notes:</h3>
-              <ul className="list-disc ml-6 text-gray-800">
+              <h3 className="text-lg font-semibold text-emerald-400 drop-shadow-md">💡 Important Notes:</h3>
+              <ul className="list-disc ml-6 text-slate-300">
                 <li>🚫 Avoid heavy activity on Day 1 due to altitude</li>
                 <li>💧 Drink lots of water!</li>
               </ul>
@@ -50,10 +50,10 @@ const Ladakh = () => (
 
           {/* Day 2 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">🏜️ Day 2: Leh → Khardung La → Nubra Valley (Diskit, Hunder)</h2>
-            <p className="text-gray-700 mb-2">📍 Stay: Hunder</p>
-            <p className="text-gray-700 mb-2">🕐 Drive: ~5 hrs / 160 km</p>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🏜️ Day 2: Leh → Khardung La → Nubra Valley (Diskit, Hunder)</h2>
+            <p className="text-slate-400 mb-2">📍 Stay: Hunder</p>
+            <p className="text-slate-400 mb-2">🕐 Drive: ~5 hrs / 160 km</p>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>🍳 <b>07:00 AM</b> – Breakfast</li>
               <li>🚗 <b>08:00 AM</b> – Depart for Nubra via Khardung La (17,982 ft) 🏔️❄️</li>
               <li>📸 <b>10:30 AM</b> – Photo stop at Khardung La top 🏁</li>
@@ -67,10 +67,10 @@ const Ladakh = () => (
 
           {/* Day 3 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">🏘️ Day 3: Nubra → Turtuk → Nubra</h2>
-            <p className="text-gray-700 mb-2">📍 Stay: Hunder</p>
-            <p className="text-gray-700 mb-2">🕐 Drive: ~6 hrs round trip / 180 km</p>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🏘️ Day 3: Nubra → Turtuk → Nubra</h2>
+            <p className="text-slate-400 mb-2">📍 Stay: Hunder</p>
+            <p className="text-slate-400 mb-2">🕐 Drive: ~6 hrs round trip / 180 km</p>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>🍳 <b>06:30 AM</b> – Early breakfast</li>
               <li>🚗 <b>07:30 AM</b> – Depart for Turtuk (India's last village before Pakistan 🇮🇳🇵🇰)</li>
               <li>🌻 <b>11:30 AM</b> – Explore:
@@ -89,10 +89,10 @@ const Ladakh = () => (
 
           {/* Day 4 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">🌊 Day 4: Nubra → Pangong Lake via Shyok River</h2>
-            <p className="text-gray-700 mb-2">📍 Stay: Pangong Lake</p>
-            <p className="text-gray-700 mb-2">🕐 Drive: ~6–7 hrs / 200 km</p>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🌊 Day 4: Nubra → Pangong Lake via Shyok River</h2>
+            <p className="text-slate-400 mb-2">📍 Stay: Pangong Lake</p>
+            <p className="text-slate-400 mb-2">🕐 Drive: ~6–7 hrs / 200 km</p>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>🍳 <b>06:30 AM</b> – Breakfast</li>
               <li>🚗 <b>07:30 AM</b> – Start for Pangong Lake via scenic Shyok route</li>
               <li>🏞️ <b>01:30 PM</b> – Reach Pangong, check-in at lakeside camps</li>
@@ -111,10 +111,10 @@ const Ladakh = () => (
 
           {/* Day 5 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">🏞️ Day 5: Pangong → Tso Moriri via Chushul & Hanle</h2>
-            <p className="text-gray-700 mb-2">📍 Stay: Tso Moriri</p>
-            <p className="text-gray-700 mb-2">🕐 Drive: ~8–9 hrs / 320 km (long & scenic)</p>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🏞️ Day 5: Pangong → Tso Moriri via Chushul & Hanle</h2>
+            <p className="text-slate-400 mb-2">📍 Stay: Tso Moriri</p>
+            <p className="text-slate-400 mb-2">🕐 Drive: ~8–9 hrs / 320 km (long & scenic)</p>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>☕ <b>05:30 AM</b> – Sunrise at Pangong 🌅</li>
               <li>🍳 <b>06:30 AM</b> – Breakfast & depart</li>
               <li>🚗 <b>07:00 AM</b> – Begin long drive via Chushul, Tsaga La, Nyoma</li>
@@ -129,10 +129,10 @@ const Ladakh = () => (
 
           {/* Day 6 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">🏔️ Day 6: Tso Moriri → Leh via Tso Kar & Tanglang La</h2>
-            <p className="text-gray-700 mb-2">📍 Stay: Leh</p>
-            <p className="text-gray-700 mb-2">🕐 Drive: ~7 hrs / 230 km</p>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">🏔️ Day 6: Tso Moriri → Leh via Tso Kar & Tanglang La</h2>
+            <p className="text-slate-400 mb-2">📍 Stay: Leh</p>
+            <p className="text-slate-400 mb-2">🕐 Drive: ~7 hrs / 230 km</p>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>🍳 <b>07:00 AM</b> – Breakfast</li>
               <li>🚗 <b>08:00 AM</b> – Drive via Tso Kar, visit salt lake 🧂</li>
               <li>🏔️ <b>01:00 PM</b> – Cross Tanglang La (17,480 ft)</li>
@@ -145,32 +145,32 @@ const Ladakh = () => (
 
           {/* Day 7 */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-700 mb-2">👋 Day 7: Leh – Departure Day</h2>
-            <ul className="list-disc ml-6 text-gray-800">
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-2">👋 Day 7: Leh – Departure Day</h2>
+            <ul className="list-disc ml-6 text-slate-300">
               <li>🍳 <b>08:00 AM</b> – Leisurely breakfast</li>
               <li>📦 <b>09:30 AM</b> – Final packing, hotel check-out</li>
               <li>🛫 <b>11:00 AM</b> – Head to Leh airport ✈️</li>
             </ul>
           </div>
 
-          <hr className="my-6 border-blue-300" />
+          <hr className="my-6 border-white/10" />
 
           {/* Travel Tips & Permits */}
           <div className="mb-4">
-            <h2 className="text-xl font-bold text-blue-700 mb-2">✅ Permits & Travel Tips</h2>
+            <h2 className="text-xl font-bold text-white drop-shadow-md mb-2">✅ Permits & Travel Tips</h2>
             <div className="mb-4">
-              <h3 className="text-lg font-semibold text-blue-600">🛂 Permit Requirements:</h3>
-              <p className="text-gray-700 mb-2">Inner Line Permits (ILP) Required for:</p>
-              <ul className="list-disc ml-6 text-gray-800">
+              <h3 className="text-lg font-semibold text-emerald-400 drop-shadow-md">🛂 Permit Requirements:</h3>
+              <p className="text-slate-400 mb-2">Inner Line Permits (ILP) Required for:</p>
+              <ul className="list-disc ml-6 text-slate-300">
                 <li>Nubra Valley</li>
                 <li>Pangong Lake</li>
                 <li>Tso Moriri</li>
               </ul>
-              <p className="mt-2">Apply online: <a href="https://www.lahdclehpermit.in" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Ladakh Permits Portal</a></p>
+              <p className="mt-2">Apply online: <a href="https://www.lahdclehpermit.in" className="text-emerald-400 drop-shadow-md underline" target="_blank" rel="noopener noreferrer">Ladakh Permits Portal</a></p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-blue-600">💡 Tips:</h3>
-              <ul className="list-disc ml-6 text-gray-800">
+              <h3 className="text-lg font-semibold text-emerald-400 drop-shadow-md">💡 Tips:</h3>
+              <ul className="list-disc ml-6 text-slate-300">
                 <li>Carry 2+ photocopies of permits & ID at all times</li>
                 <li>Fill fuel in Leh before remote stretches</li>
                 <li>Mobile networks: Only BSNL, Airtel (postpaid) work in most remote areas</li>
@@ -181,12 +181,12 @@ const Ladakh = () => (
 
           {/* Google Maps Route */}
           <div className="mt-8 text-center">
-            <h2 className="text-2xl font-bold text-blue-700 mb-4">🗺️ Google Maps Route (Visualize Your Journey)</h2>
+            <h2 className="text-2xl font-bold text-white drop-shadow-md mb-4">🗺️ Google Maps Route (Visualize Your Journey)</h2>
             <a 
               href="https://www.google.com/maps/dir/Leh/Nubra+Valley/Turtuk/Pangong+Lake/Tso+Moriri/Leh"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+              className="inline-block bg-emerald-500 text-[#0B0F19] shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:bg-emerald-400 text-[#0B0F19] font-bold py-2 px-4 rounded-lg transition duration-300"
             >
               📍 Click Here for Full Route Map
             </a>

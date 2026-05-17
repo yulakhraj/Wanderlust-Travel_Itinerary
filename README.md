@@ -1,57 +1,29 @@
-# Wanderlust - Travel Itinerary Generator
+# Wanderlust - Premium Travel Itinerary Platform
 
-A responsive web application that helps users generate personalized travel itineraries based on their preferences.
+A beautifully crafted, highly responsive web application that helps users discover and plan their next adventure across India. Recently revamped with a stunning dark mode aesthetic, smooth glassmorphism UI, and high-performance image carousels.
 
-## Project Structure
+## Features
 
-```
-wanderlust/
-├── public/
-│   ├── index.html
-│   ├── manifest.json
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── Navbar.js
-│   │   ├── Footer.js
-│   │   ├── LocationPage.js
-│   │   ├── LocationGrid.js
-│   │   └── Location/
-│   │       ├── Sikkim.js
-│   │       ├── Ladakh.js
-│   │       ├── KulluManali.js
-│   │       ├── Rishikesh.js
-│   │       ├── Kashmir.js
-│   │       ├── Goa.js
-│   │       ├── Jaipur.js
-│   │       ├── Kerala.js
-│   │       ├── Andaman.js
-│   │       ├── ArunachalPradesh.js
-│   │       ├── Uttarakhand.js
-│   │       ├── NorthEast.js
-│   │       └── Bhutan.js
-│   ├── data/
-│   │   └── locations.js
-│   ├── styles/
-│   │   └── main.css
-│   ├── App.js
-│   ├── index.js
-│   └── reportWebVitals.js
-├── .gitignore
-├── package.json
-├── tailwind.config.js
-└── README.md
-```
+- **Immersive Dark Theme**: A visually striking slate-blue design that makes high-resolution destination images pop.
+- **Glassmorphism UI**: Dynamic frosted glass (`backdrop-blur`) navigation bars and itinerary containers.
+- **Interactive Carousel**: Horizontal snapping carousel featuring top curated destinations with hover-zoom effects.
+- **13 Detailed Itineraries**: Comprehensive day-by-day travel guides for top locations (Ladakh, Sikkim, Goa, etc.).
+- **Dynamic Routing**: Extensible layout wrapper (`LocationLayout`) injecting dynamic Unsplash imagery for every inside page.
+- **Responsive Design**: Flawless experience from mobile screens to ultrawide desktop monitors.
 
 ## Tech Stack
 
-- React.js
-- Tailwind CSS
-- JavaScript (ES6+)
+- **React.js** (v18+)
+- **React Router v6** for seamless single-page navigation
+- **Tailwind CSS** for rapid, responsive UI styling
+- **Lucide React** for modern, crisp SVG iconography
 
 ## Setup Instructions
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yulakhraj/Wanderlust-Travel_Itinerary.git
+   ```
 2. Install dependencies:
    ```bash
    npm install
@@ -61,26 +33,25 @@ wanderlust/
    npm start
    ```
 
-## Features
+## Project Structure
 
-- Responsive navigation bar with logo and menu items
-- Destination tiles for easy navigation
-- 7-day itineraries for each location
-- Travel tips and Google Maps route links
-- Contact information and social links in footer
-- Print-friendly itinerary format
-
-## Development
-
-The project uses:
-- React for component-based architecture
-- Tailwind CSS for styling
-- Modern JavaScript features
-- Responsive design principles
+```
+wanderlust/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   ├── LocationLayout.js   # New dynamic layout wrapper
+│   │   ├── LocationPage.js
+│   │   └── Location/           # 13 Individual itinerary components
+│   ├── data/
+│   │   └── locations.js        # Centralized data with verified image URLs
+│   ├── styles/
+│   │   └── main.css            # Custom CSS utilities (hide-scrollbar)
+│   └── App.js                  # Main landing page
+```
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests.
-
-## Notes
-- A `.gitignore` file is included to prevent `node_modules` and other unnecessary files from being committed to version control. 
+Feel free to submit issues and enhancement requests. The UI is designed to be easily extensible. If adding new locations, simply update `locations.js` and drop a new component inside `src/components/Location/`.
